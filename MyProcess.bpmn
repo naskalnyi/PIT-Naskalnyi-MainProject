@@ -10,7 +10,7 @@
         <activiti:formProperty id="Telephone" name="Телефон" type="string" default="+380" required="true"></activiti:formProperty>
         <activiti:formProperty id="AddressPhysical" name="Адреса" type="string" required="true"></activiti:formProperty>
         <activiti:formProperty id="Passport" name="Серія та номер паспорту" type="string" required="true"></activiti:formProperty>
-        <activiti:formProperty id="Scan_doc" name="Сканована копія дозволу на порушення об’єкту благоустрою" type="file" required="true"></activiti:formProperty>
+        <activiti:formProperty id="Scan_doc" name="Скан паспорту" type="file" required="true"></activiti:formProperty>
         <activiti:formProperty id="IPN" name="індивідуальний податковий номер" type="string" required="true"></activiti:formProperty>
         <activiti:formProperty id="NameOfTheOrganization" name="назва підприємства" type="string" required="true"></activiti:formProperty>
         <activiti:formProperty id="KVED" name="КВЕД" type="string" required="true"></activiti:formProperty>
@@ -24,8 +24,8 @@
         <activiti:formProperty id="Address_work_to" name="Місце закінчення робіт" type="string" required="true"></activiti:formProperty>
         <activiti:formProperty id="Work_goal" name="Ціль проведення робіт" type="string" required="true"></activiti:formProperty>
         <activiti:formProperty id="Work_type" name="Характер робіт" type="string" required="true"></activiti:formProperty>
-        <activiti:formProperty id="Work_project_scan" name="Скан проекту роботи" type="string" required="true"></activiti:formProperty>
-        <activiti:formProperty id="Trafic_corection_scheme_scan" name="Схема корегування дорожньотранспортного руху на час проведення робіт" type="string" required="true"></activiti:formProperty>
+        <activiti:formProperty id="Work_project_scan" name="Скан проекту роботи" type="file" required="true"></activiti:formProperty>
+        <activiti:formProperty id="Trafic_corection_scheme_scan" name="Схема корегування дорожньотранспортного руху на час проведення робіт" type="file" required="true"></activiti:formProperty>
       </extensionElements>
     </startEvent>
     <endEvent id="endevent1" name="End"></endEvent>
@@ -171,7 +171,7 @@
         <activiti:formProperty id="Telephone" name="Телефон" type="string" default="+380" writable="false"></activiti:formProperty>
         <activiti:formProperty id="AddressPhysical" name="Адреса" type="string" writable="false"></activiti:formProperty>
         <activiti:formProperty id="Passport" name="Серія та номер паспорту" type="string" writable="false"></activiti:formProperty>
-        <activiti:formProperty id="Scan_doc" name="Сканована копія дозволу на порушення об’єкту благоустрою" type="file" writable="false"></activiti:formProperty>
+        <activiti:formProperty id="Scan_doc" name="Скан паспорту" type="file" writable="false"></activiti:formProperty>
         <activiti:formProperty id="IPN" name="індивідуальний податковий номер" type="string" writable="false"></activiti:formProperty>
         <activiti:formProperty id="NameOfTheOrganization" name="назва підприємства" type="string" writable="false"></activiti:formProperty>
         <activiti:formProperty id="KVED" name="КВЕД" type="string" writable="false"></activiti:formProperty>
@@ -185,8 +185,8 @@
         <activiti:formProperty id="Address_work_to" name="Місце закінчення робіт" type="string" writable="false"></activiti:formProperty>
         <activiti:formProperty id="Work_goal" name="Ціль проведення робіт" type="string" writable="false"></activiti:formProperty>
         <activiti:formProperty id="Work_type" name="Характер робіт" type="string" writable="false"></activiti:formProperty>
-        <activiti:formProperty id="Work_project_scan" name="Скан проекту роботи" type="string" writable="false"></activiti:formProperty>
-        <activiti:formProperty id="Trafic_corection_scheme_scan" name="Схема корегування дорожньотранспортного руху на час проведення робіт" type="string" writable="false"></activiti:formProperty>
+        <activiti:formProperty id="Work_project_scan" name="Скан проекту роботи" type="file" writable="false"></activiti:formProperty>
+        <activiti:formProperty id="Trafic_corection_scheme_scan" name="Схема корегування дорожньотранспортного руху на час проведення робіт" type="file" writable="false"></activiti:formProperty>
         <activiti:formProperty id="lastName_the_official" name="Прізвище посадовця" type="string" required="true"></activiti:formProperty>
         <activiti:formProperty id="firstName_the_official" name="Імя посадовця" type="string" required="true"></activiti:formProperty>
         <activiti:formProperty id="middleName_the_official" name="По батькові посадовця" type="string" required="true"></activiti:formProperty>
@@ -200,14 +200,14 @@
     </userTask>
     <userTask id="usertask2" name=" [Етап II] Підтвердження дозволу ">
       <extensionElements>
-       <activiti:formProperty id="lastName" name="Прізвище" type="string" writable="false"></activiti:formProperty>
+        <activiti:formProperty id="lastName" name="Прізвище" type="string" writable="false"></activiti:formProperty>
         <activiti:formProperty id="firstName" name="Імя" type="string" writable="false"></activiti:formProperty>
         <activiti:formProperty id="middleName" name="По батькові" type="string" writable="false"></activiti:formProperty>
         <activiti:formProperty id="Email" name="Email" type="string" writable="false"></activiti:formProperty>
         <activiti:formProperty id="Telephone" name="Телефон" type="string" default="+380" writable="false"></activiti:formProperty>
         <activiti:formProperty id="AddressPhysical" name="Адреса" type="string" writable="false"></activiti:formProperty>
         <activiti:formProperty id="Passport" name="Серія та номер паспорту" type="string" writable="false"></activiti:formProperty>
-        <activiti:formProperty id="Scan_doc" name="Сканована копія дозволу на порушення об’єкту благоустрою" type="file" writable="false"></activiti:formProperty>
+        <activiti:formProperty id="Scan_doc" name="Скан паспорту" type="file" writable="false"></activiti:formProperty>
         <activiti:formProperty id="IPN" name="індивідуальний податковий номер" type="string" writable="false"></activiti:formProperty>
         <activiti:formProperty id="NameOfTheOrganization" name="назва підприємства" type="string" writable="false"></activiti:formProperty>
         <activiti:formProperty id="KVED" name="КВЕД" type="string" writable="false"></activiti:formProperty>
@@ -221,12 +221,17 @@
         <activiti:formProperty id="Address_work_to" name="Місце закінчення робіт" type="string" writable="false"></activiti:formProperty>
         <activiti:formProperty id="Work_goal" name="Ціль проведення робіт" type="string" writable="false"></activiti:formProperty>
         <activiti:formProperty id="Work_type" name="Характер робіт" type="string" writable="false"></activiti:formProperty>
-        <activiti:formProperty id="Work_project_scan" name="Скан проекту роботи" type="string" writable="false"></activiti:formProperty>
-        <activiti:formProperty id="Trafic_corection_scheme_scan" name="Схема корегування дорожньотранспортного руху на час проведення робіт" type="string" writable="false"></activiti:formProperty>
-        <activiti:formProperty id="lastName_the_official" name="Прізвище посадовця" type="string" required="false" writable="false"></activiti:formProperty>
-        <activiti:formProperty id="firstName_the_official" name="Імя посадовця" type="string" required="false" writable="false"></activiti:formProperty>
-        <activiti:formProperty id="middleName_the_official" name="По батькові посадовця" type="string" required="false" writable="false"></activiti:formProperty>
-        <activiti:formProperty id="appointment" name="Посада" type="string" required="false" writable="false"></activiti:formProperty>
+        <activiti:formProperty id="Work_project_scan" name="Скан проекту роботи" type="file" writable="false"></activiti:formProperty>
+        <activiti:formProperty id="Trafic_corection_scheme_scan" name="Схема корегування дорожньотранспортного руху на час проведення робіт" type="file" writable="false"></activiti:formProperty>
+        <activiti:formProperty id="lastName_the_official" name="Прізвище посадовця" type="string" writable="false"></activiti:formProperty>
+        <activiti:formProperty id="firstName_the_official" name="Імя посадовця" type="string" writable="false"></activiti:formProperty>
+        <activiti:formProperty id="middleName_the_official" name="По батькові посадовця" type="string" writable="false"></activiti:formProperty>
+        <activiti:formProperty id="appointment" name="Посада" type="string" writable="false"></activiti:formProperty>
+        <activiti:formProperty id="decision_1" name="Прийняте рішення щодо розгляду надання дозволу" type="enum" writable="false">
+          <activiti:value id="access" name="розглянути дозвіл"></activiti:value>
+          <activiti:value id="reject" name="відмовити у розгляді дозволу"></activiti:value>
+        </activiti:formProperty>
+        <activiti:formProperty id="comment_1" name="У разі відмови внесіть, будь ласка, коментар" type="string" writable="false"></activiti:formProperty>
         <activiti:formProperty id="lastName_the_official2" name="Прізвище посадовця" type="string" required="true"></activiti:formProperty>
         <activiti:formProperty id="firstName_the_official2" name="Імя посадовця" type="string" required="true"></activiti:formProperty>
         <activiti:formProperty id="middleName_the_official2" name="По батькові посадовця" type="string" required="true"></activiti:formProperty>
@@ -338,7 +343,7 @@
         <omgdi:waypoint x="670.0" y="633.0"></omgdi:waypoint>
         <omgdi:waypoint x="517.0" y="670.0"></omgdi:waypoint>
         <bpmndi:BPMNLabel>
-          <omgdc:Bounds height="14.0" width="61.0" x="581.0" y="630.0"></omgdc:Bounds>
+          <omgdc:Bounds height="14.0" width="100.0" x="581.0" y="630.0"></omgdc:Bounds>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge bpmnElement="flow16" id="BPMNEdge_flow16">
